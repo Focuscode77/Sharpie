@@ -10,7 +10,7 @@ const todoList = document.querySelector('.todo-list');
 //Functions
 
 const addTodo = (event) => {
-    //Prevent form from sunmitting
+    //Prevent form from submitting
     event.preventDefault();
     //Testing event listner
     console.log('hello');
