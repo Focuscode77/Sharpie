@@ -82,3 +82,30 @@ todoList.addEventListener('click', deleteCheck);
 
 
 
+let myName = "Test";
+
+let myTest = true;
+
+let myArr = ["apple", "orange", "peanut"];
+
+let myOnj = {
+    name: "test",
+    age: 21
+}
+console.log(myOnj)
+
+console.log(myArr);
+
+console.log(myName);
+
+console.log(myTest);
+
+function muiltply(num1, num2) {
+    let results = num1 + num2;
+
+    return results;
+
+}
+
+console.log(muiltply(1, 1));
+console.log(muiltply(2, 2));
