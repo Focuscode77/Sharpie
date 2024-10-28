@@ -1,9 +1,9 @@
 console.log("game script is connected")
-
+//Grabbing html selectors
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText");
 const restartBtn = document.querySelector("#restartBtn ");
-
+//Win coonditions
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -18,7 +18,7 @@ const winConditions = [
 let options = ["", "", "", "", "", "", "", "", ""];
 let currentPLayer = "X";
 let running = false;
-
+//This starts the game
 initializeGame();
 
 
@@ -29,6 +29,7 @@ function initializeGame() {
     running = true;
 }
 
+// Checks if the clicked cell has a value
 function cellClicked() {
     const cellIndex = this.getAttribute("cellIndex");
 
@@ -43,12 +44,14 @@ function cellClicked() {
 
 }
 
+//Updates the cell 
 function updateCell(cell, index) {
     options[index] = currentPLayer;
     cell.textContent = currentPLayer;
 
 }
 
+//Change the player lets you know who turn it is
 function changePlayer() {
     currentPLayer = (currentPLayer == "X") ? "O" : "X";
 
@@ -56,6 +59,7 @@ function changePlayer() {
 
 }
 
+//Checks if the game is still going 
 function checkWinner() {
 
     let roundWon = false;
@@ -96,6 +100,7 @@ function checkWinner() {
 
 }
 
+//Restarts the game
 function restartGame() {
     changePlayer = "X";
     options = ["", "", "", "", "", "", "", "", ""];
