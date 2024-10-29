@@ -81,7 +81,7 @@ todoList.addEventListener('click', deleteCheck);
 
 
 
-
+//Variables Check
 let myName = "Test";
 
 let myTest = true;
