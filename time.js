@@ -85,3 +85,19 @@ var t = {
 }
 
 t.log();
+
+//Arry
+
+var arr = [1, 2, false];
+
+console.log(arr)
+
+function team(firstname, lastname, language) {
+
+    console.log(firstname);
+    console.log(lastname);
+    console.log(language)
+
+}
+
+team('james', 'ten', 'english')
