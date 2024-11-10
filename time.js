@@ -148,3 +148,26 @@ greetSpanish('mugel', 'gomez');
 // ignore the white space in you code
 
 
+//Function Statement
+function greet(name) {
+
+    console.log("Hello" + name);
+
+}
+
+greet('james');
+
+// using a function expression
+var greetFunc = function (name) {
+
+    console.log('Hello' + name);
+
+};
+
+greetFunc('james')
+
+//using an Immediately Invoked Function Expression (IIFE)
+var greeting = function (name) {
+    return 'Hello' + name;
+
+}();
