@@ -349,3 +349,87 @@ tellMeWhenDone(function () {
 });
 
 //Call, Apply, Bind
+//controling the this keyword
+// A function is a special kind of object that allows you to pass in arguments
+// and add logic to it
+// Names are optional and can be anonymous
+// Codee is invocable
+//call , apply, bind all of this have to do with the this key word
+var person = {
+    firstname: 'Tom',
+    lastname: 'grace',
+    getFullName: function () {
+
+        var fullname = this.firstname + ' ' + this.lastname;
+        return fullname;
+
+    }
+
+}
+
+var logName = function (lang1, lang2) {
+
+    console.log('Logged' + this.getFullName());
+    console.log('Arguments' + lang1 + '' + lang2);
+    console.log('--------------');
+
+
+}
+
+// The bind method ensure that the this variabl is attached to the
+// this person variable
+var logPersonName = logName.bind(person);
+
+logPersonName();
+//Allows you to control what this means allow you to also call
+// prameters
+logName.call(person, 'en', 'es');
+
+// apply needs to be an array go over lesson 51
+logName.apply(person, ['en', 'es']);
+
+
+(function (lang1, lang2) {
+
+    console.log('Logged' + this.getFullName());
+    console.log('Arguments' + lang1 + '' + lang2);
+    console.log('--------------');
+
+
+}).apply(person, ['en', 'es']);
+
+
+
+
+//function borrowing
+
+var person2 = {
+
+    firstname: 'Moe',
+    lastname: 'Blue'
+
+}
+//This is how you can grab properites from other mthods
+person.getFullName.apply(person2);
+
+
+//function currying
+function multiply(a, b) {
+
+    return a * b;
+
+};
+// Giving the function values to make permeant values for when the call is made
+// you can make the numbers permeant by putting them in the prameters
+//or you can pass it into the invoke and change numbers on the fly
+var multpleByTwo = multiply.bind(this, 2);
+
+console.log(multpleByTwo(3));
+//function currying creating a copy of a function but with some preset values
+// These are just methods on a function object
+
+
+
+
+
+
