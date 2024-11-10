@@ -278,3 +278,74 @@ fs2[1]();
 fs2[2]();
 
 //Function Factories
+// How we can use closures to our advantage
+function makeGreeting(language) {
+
+    return function (firstname, lastname) {
+
+        if (language === 'en') {
+
+            console.log('Hello' + ' ' + firstname + ' ' + lastname)
+
+        }
+        if (language === 'es') {
+
+            console.log('Hola' + ' ' + firstname + '  ' + lastname)
+        }
+
+    }
+
+}
+
+var greetOne = makeGreeting('en');
+var greetTwo = makeGreeting('es');
+
+greetOne('nick', 'cole');
+greetTwo('dan', 'thomas');
+
+//Closures and Callbacks
+// If you have been used set timeout you havee already been using 
+//javascript callbacks
+// goes up the scope chain and checks it memory
+function sayHiLater() {
+
+    var greeting = 'Hi';
+    //This is called a callback function
+    // A call back function is a function you give to another function
+    //when thee function  is finished
+    setTimeout(function () {
+
+        console.log(greeting);
+
+
+    }, 3000);
+}
+
+sayHiLater();
+
+
+// Function that calls for a callback
+
+function tellMeWhenDone(callback) {
+
+    var a = 1000;// some work
+    var b = 2000;// soome work
+
+
+    callback(); // the call back runs the function you give it
+}
+
+
+tellMeWhenDone(function () {
+
+    alert('I am done');
+
+});
+
+tellMeWhenDone(function () {
+
+    console.log('I am done');
+
+});
+
+//Call, Apply, Bind
