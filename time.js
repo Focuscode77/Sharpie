@@ -171,3 +171,110 @@ var greeting = function (name) {
     return 'Hello' + name;
 
 }();
+
+// an prenthesis operator only takes in an expression
+
+//Can pass  variable names or expression to the function
+
+//IIFE and Safe Code
+//when you create a function and place prenthesis first  you are putting
+//that oobject on the execution stack and saving it in memory without running
+//the code
+//Wrapping your code in prenthesis ensure that your code does not run into
+//or interfere with  a variable or function with a similar name
+var firstname = "John";
+
+
+(function (global, name) {
+    var greeting = 'Hello';
+    //if  you want to you can even place the object on the golabal window object
+    global.greeting = 'Terance'
+    console.log(greeting + " " + name);
+
+
+}(window, firstname)); //IIFE
+
+console.log(greeting)
+
+// Closure
+
+function apple(whattosay) {
+
+    return function (name) {
+        console.log(whattosay + ' ' + name);
+
+    }
+
+}
+
+apple('Hey')('Tony');
+
+var sayHi = apple('Hey');
+
+//This is possible because of Closure
+//It see this because it still exsist in memory and it goes up
+//the scope chain to recoginze what exactly apple 'hey is this is becaue
+//of the lexical environment this means that it still has memory what was connected to it in memory
+// Note it doesnt matter when we invoke the funtion it will make sure it knows
+//What  the function is connected to in memeory
+sayHi('Tony');
+
+//Closure Part 2
+function buildFunction() {
+
+    var arr = [];
+    // Output will be a 3 because it will not leave the for  loop
+    // until this expression is no longer true
+    for (var i = 0; i < 3; i++) {
+
+        arr.push(
+            function () {
+
+                console.log(i);
+
+            }
+        )
+    }
+
+    return arr;
+
+}
+
+// also called free variables
+var fs = buildFunction();
+// All  three of these have the same parant object
+// Look behind the scenes instead of what your wrirting
+
+fs[0]();
+fs[1]();
+fs[2]();
+
+//Go over lesson  46 for more details Function Closures
+function buildFunction2() {
+
+    var arr = [];
+
+    for (var i = 0; i < 3; i++) {
+
+        arr.push(
+            (function (j) {
+                return function () {
+                    console.log(j);
+
+                }
+
+            }(i))
+        )
+    }
+
+    return arr;
+
+}
+
+var fs2 = buildFunction2();
+
+fs2[0]();
+fs2[1]();
+fs2[2]();
+
+//Function Factories
