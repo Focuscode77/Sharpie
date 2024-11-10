@@ -73,7 +73,6 @@ k();
 
 r();
 
-
 // this  points  to the object
 var t = {
 
@@ -101,3 +100,51 @@ function team(firstname, lastname, language) {
 }
 
 team('james', 'ten', 'english')
+
+//Function over loading
+
+function project(firstname, lastname, language) {
+
+    language = language || 'en';
+
+    if (language === 'en') {
+
+        console.log('Hello' + ' ' + firstname + ' ' + lastname);
+
+    }
+    if (language === 'es') {
+
+        console.log('Hola' + ' ' + firstname + ' ' + lastname);
+    }
+
+}
+
+// Create different functions
+function greetEnglish(firstname, lastname) {
+
+    project(firstname, lastname, 'en');
+
+}
+
+function greetSpanish(firstname, lastname) {
+
+    project(firstname, lastname, 'es');
+
+}
+
+greetEnglish('james', 'test');
+
+greetSpanish('mugel', 'gomez');
+
+// Becareful of using Semicolon Insertion
+//Semiclons are optional in javascript 
+//You should always put your own semiclons in your code
+//If you dont add your own the javascript engine will add its own semicolon which could
+// mess up your code
+
+//Whitespace invisable characters that create literal space in your
+// written code
+//You can add as many comments as you want in your code  it will
+// ignore the white space in you code
+
+
