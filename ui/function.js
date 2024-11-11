@@ -63,3 +63,73 @@ var onlyLimit = function (limiter) {
 
 var arr5 = mapForEach(arr1, onlyLimit(2));
 console.log(arr5);
+
+
+//  Best Examples UnderScore.Js
+
+function carShop(arr, fn) {
+
+    newCar = []
+
+    for (i = 0; i < arr.length; i++) {
+
+        newCar.push(
+
+            fn(arr[i])
+
+        )
+    }
+
+    return newCar
+
+}
+
+var car = [1, 2, 3];
+
+var carTwo = carShop(car, function (item) {
+
+    return item * 2;
+
+})
+
+console.log(carTwo)
+
+
+
+function saveAcount(arr, fn) {
+
+    var newAccount = []
+
+    for (i = 0; i < arr.length; i++) {
+
+        newAccount.push(
+
+            fn(arr[i])
+
+        )
+    }
+
+    return newAccount
+
+}
+
+var save = [2, 3, 4];
+
+var save2 = saveAcount(save, function (item) {
+
+    return item * 2
+
+})
+
+console.log(save2);
+
+// Limiter example
+
+var newStyle = function (limiter, item) {
+
+    return item > limiter
+
+
+}
+
+console.log(newStyle(1, 5))
