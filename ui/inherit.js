@@ -47,6 +47,19 @@ console.log(tim);
 
 console.log(test);
 
+
+function Food(protien, vegetables) {
+
+    this.protien = protien;
+    this.vegetables = vegetables
+
+}
+
+var store = new Food('Steak', 'Kale');
+
+console.log(store.protien)
+console.log(store.vegetables)
+
 // Built in functions Construtors
 // When you build coonstrutors you are actually building objects
 
