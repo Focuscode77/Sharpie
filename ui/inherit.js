@@ -141,3 +141,29 @@ console.log(typeof people);
 // Strict Mode
 // you can use strict to give extra rules on your code better to 
 //use at the top of the file
+
+var talent = [{
+
+    name: 'Josh',
+    address: ['1234 east test'],
+    greeting: function (name) {
+
+        console.log('Hey', name)
+
+
+    }
+
+},
+{
+
+    event: 'space',
+
+    drinks: 'wine'
+
+
+}
+
+]
+
+
+console.log(talent[0].greeting('kim'))
