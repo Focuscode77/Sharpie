@@ -167,3 +167,31 @@ var talent = [{
 
 
 console.log(talent[0].greeting('kim'))
+
+
+// Duplicate test
+var friday = [{
+
+    name: 'Test',
+    address: ['6789 east test'],
+    greeting: function (name) {
+
+        console.log('Welcome', name)
+
+
+    }
+
+},
+{
+
+    event: 'dinner',
+
+    drinks: 'soda'
+
+
+}
+
+]
+
+
+console.log(talent[0].greeting('Jess'))
