@@ -428,7 +428,21 @@ console.log(multpleByTwo(3));
 //function currying creating a copy of a function but with some preset values
 // These are just methods on a function object
 
+person.getFullName.apply(person2);
 
+
+//function currying
+function multiply(a, b) {
+
+    return a * b;
+
+};
+// Giving the function values to make permeant values for when the call is made
+// you can make the numbers permeant by putting them in the prameters
+//or you can pass it into the invoke and change numbers on the fly
+var multpleByTwo = multiply.bind(this, 2);
+
+console.log(multpleByTwo(3));
 
 
 
