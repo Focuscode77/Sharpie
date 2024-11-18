@@ -102,3 +102,10 @@ function DinnerTime(hungry) {
 
 
 DinnerTime("Now")
+
+function cup() {
+
+    console.log('Test')
+
+
+}
