@@ -1,6 +1,6 @@
 console.log('I am in the console');
 
-function greet(hello) {
+function love(hello) {
 
     if ("test" === hello) {
 
@@ -17,4 +17,27 @@ function greet(hello) {
 
 }
 
-greet('test')
+
+
+const eagles = {
+
+    name: 'terrance',
+    lastName: 'Test',
+    greet: () => {
+
+        var fullname = this.name + '' + this.lastName;
+
+        console.log(fullname)
+
+    }
+
+
+
+
+
+}
+
+
+
+console.log(eagles.name);
+console.log(eagles.lastName)
