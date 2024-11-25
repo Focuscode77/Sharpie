@@ -27,3 +27,10 @@ const time = {
 };
 
 console.log(time.name);
+
+const food = {
+  eat: 'shrimp',
+  overn: true,
+};
+
+console.log(food.eat);
