@@ -34,3 +34,11 @@ const food = {
 };
 
 console.log(food.eat);
+
+const drink = {
+  soda: 'sprite',
+
+  juice: 'cranberry',
+};
+
+console.log(drink.juice);
