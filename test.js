@@ -50,3 +50,14 @@ const mail = {
 };
 
 console.log(mail.time);
+
+const monday = (time) => {
+  if (time === 'time') {
+    console.log('I am on the right track');
+  } else {
+    console.log('Keep practicing');
+  }
+};
+
+monday('James');
+monday('time');
