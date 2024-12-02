@@ -42,3 +42,11 @@ const drink = {
 };
 
 console.log(drink.juice);
+
+const mail = {
+  time: 'new',
+
+  drink: 'water',
+};
+
+console.log(mail.time);
