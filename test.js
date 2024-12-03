@@ -61,3 +61,13 @@ const monday = (time) => {
 
 monday('James');
 monday('time');
+
+const tuesday = (name) => {
+  if (name === 'James') {
+    alert('Hello' + ' ' + name);
+  } else {
+    alert('Try again');
+  }
+};
+
+tuesday('James');
