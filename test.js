@@ -71,3 +71,13 @@ const tuesday = (name) => {
 };
 
 tuesday('James');
+
+const wensday = (name) => {
+  if (name === 'water') {
+    alert('I am' + ' ' + name);
+  } else {
+    alert('Try again');
+  }
+};
+
+wensday('water');
