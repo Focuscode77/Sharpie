@@ -81,3 +81,13 @@ const wensday = (name) => {
 };
 
 wensday('water');
+
+const friday = (name) => {
+  if (name === 'earth') {
+    alert('I am' + ' ' + name);
+  } else {
+    alert('Try again');
+  }
+};
+
+friday('earth');
