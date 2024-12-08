@@ -91,3 +91,13 @@ const friday = (name) => {
 };
 
 friday('earth');
+
+const sunday = (name) => {
+  if (name === 'earth') {
+    alert('I am' + ' ' + name);
+  } else {
+    alert('Try again');
+  }
+};
+
+friday('coming');
