@@ -83,21 +83,31 @@ const wensday = (name) => {
 wensday('water');
 
 const friday = (name) => {
-  if (name === 'earth') {
+  if (name === 'fire') {
     alert('I am' + ' ' + name);
   } else {
     alert('Try again');
   }
 };
 
-friday('earth');
+friday('fire');
 
 const sunday = (name) => {
-  if (name === 'earth') {
+  if (name === 'pure') {
     alert('I am' + ' ' + name);
   } else {
     alert('Try again');
   }
 };
 
-friday('coming');
+sunday('pure');
+
+const MondayTwo = (name) => {
+  if (name === 'earth') {
+    alert('I am' + ' ' + name);
+  } else {
+    alert('Consistency');
+  }
+};
+
+MondayTwo('earth');
