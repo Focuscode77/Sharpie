@@ -111,3 +111,15 @@ const MondayTwo = (name) => {
 };
 
 MondayTwo('earth');
+
+const gum = ['Trident', 'Winter fresh', 'Juicy Fruit', 'Altoids'];
+
+//console.log(gum[0]);
+
+const fresh = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+
+fresh(gum);
