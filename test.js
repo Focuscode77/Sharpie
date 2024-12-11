@@ -123,3 +123,15 @@ const fresh = (name) => {
 };
 
 fresh(gum);
+
+const holiday = ['apple juice', 'water', 'Tea', 'soda'];
+
+//console.log(gum[0]);
+
+const comp = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+
+fresh(holiday);
