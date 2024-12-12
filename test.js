@@ -135,3 +135,13 @@ const comp = (name) => {
 };
 
 fresh(holiday);
+
+const christmas = ['balls', 'light', 'ginger bread', 'tree'];
+
+const tree = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+
+tree(christmas);
