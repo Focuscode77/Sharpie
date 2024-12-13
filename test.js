@@ -148,10 +148,10 @@ tree(christmas);
 
 const Satarday = ['balls', 'light', 'ginger bread', 'tree'];
 
-const laf = (name) => {
+const leaf = (name) => {
   for (i = 0; i < name.length; i++) {
     console.log(name[i]);
   }
 };
 
-tree(Satarday);
+leaf(Satarday);
