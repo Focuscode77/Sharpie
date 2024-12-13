@@ -145,3 +145,13 @@ const tree = (name) => {
 };
 
 tree(christmas);
+
+const Satarday = ['balls', 'light', 'ginger bread', 'tree'];
+
+const laf = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+
+tree(Satarday);
