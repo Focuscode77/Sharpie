@@ -155,3 +155,12 @@ const leaf = (name) => {
 };
 
 leaf(Satarday);
+
+const Sunday = ['balls', 'light', 'ginger bread', 'tree'];
+
+const motorla = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+motorla(Sunday);
