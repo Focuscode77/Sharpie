@@ -8,3 +8,12 @@ const Wings = (name) => {
   }
 };
 Wings(Monday);
+
+const Tuesday = ['Christmas', 'Thanksgiving', 'Time', 'Water'];
+
+const Fries = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+Fries(Tuesday);
