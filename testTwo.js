@@ -17,3 +17,12 @@ const Fries = (name) => {
   }
 };
 Fries(Tuesday);
+
+const Wensday = ['New', 'Code', 'Time', 'Water'];
+
+const Lamb = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+Lamb(Wensday);
