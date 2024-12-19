@@ -26,3 +26,12 @@ const Lamb = (name) => {
   }
 };
 Lamb(Wensday);
+
+const Thursday = ['New', 'Code', 'Time', 'Water'];
+
+const Pen = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+Pen(Thursday);
