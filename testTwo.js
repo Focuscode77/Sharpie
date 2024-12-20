@@ -35,3 +35,12 @@ const Pen = (name) => {
   }
 };
 Pen(Thursday);
+
+const Friday = ['holiday', 'Code', 'Time', 'Water'];
+
+const balls = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+balls(Friday);
