@@ -44,3 +44,12 @@ const balls = (name) => {
   }
 };
 balls(Friday);
+
+const Sunday = ['holiday', 'Code', 'Time', 'Water'];
+
+const time = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+time(Sunday);
