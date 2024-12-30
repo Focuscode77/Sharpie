@@ -53,3 +53,12 @@ const time = (name) => {
   }
 };
 time(Sunday);
+
+const Ford = ['Toyota', 'Hinda', 'Subaru', 'Cadillac'];
+
+const Car = (name) => {
+  for (i = 0; i < name.length; i++) {
+    console.log(name[i]);
+  }
+};
+Car(Ford);
