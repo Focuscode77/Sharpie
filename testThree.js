@@ -114,3 +114,37 @@ const mixThree = {
 const Full = mixThree.People[0].FirstName + ' ' + mixTwo.People[0].LastName;
 
 console.log(Full);
+
+const simpleObjectFour = {
+  Key: 'value',
+  KeyTwo: 'valueTwo',
+  KeyThree: 'valueThree',
+};
+
+const simpleArrayFour = ['orange', 'apple', 'lemon', 'strawberry'];
+
+const typesOfDataFour = { string: 'This is a string', number: 30 };
+
+const mixFour = {
+  FirstName: 'James',
+  LastName: 'Health',
+  Age: 33,
+  People: [
+    {
+      FirstName: 'Pinapple',
+      LastName: 'Water',
+      Age: 30,
+    },
+    {
+      FirstName: 'Peter',
+      LastName: 'Sand',
+      Age: 30,
+    },
+  ],
+};
+
+//console.log(mixFour.People[0].FirstName);
+
+const GymName = mixFour.People[0].FirstName;
+
+console.log(GymName);
