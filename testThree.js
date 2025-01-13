@@ -160,17 +160,17 @@ const simpleArrayFive = ['orange', 'apple', 'lemon', 'strawberry'];
 const typesOfDataFive = { string: 'This is a string', number: 30 };
 
 const mixFive = {
-  FirstName: 'Nick',
+  FirstName: 'John',
   LastName: 'Health',
   Age: 33,
   People: [
     {
-      FirstName: 'Apple',
+      FirstName: 'Watermelon',
       LastName: 'Water',
       Age: 30,
     },
     {
-      FirstName: 'Peter',
+      FirstName: 'Tim',
       LastName: 'Sand',
       Age: 30,
     },
@@ -179,6 +179,6 @@ const mixFive = {
 
 //console.log(mixFour.People[0].FirstName);
 
-const TimeName = mixFour.People[0].FirstName;
+const Gymlife = mixFour.People[0].FirstName;
 
-console.log(TimeName);
+console.log(GymName);
