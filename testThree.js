@@ -182,3 +182,13 @@ const mixFive = {
 const Gymlife = mixFour.People[0].FirstName;
 
 console.log(GymName);
+
+const chestPress = { key: 'value', keyTwo: 'valueTwo' };
+
+const simpleFood = ['orange', 'apple', 'lemon', 'strawberry'];
+
+const typesOfFood = { string: 'This is a string', number: 30 };
+
+console.log(typesOfFood.string);
+console.log(chestPress.key);
+console.log(simpleFood[0]);
