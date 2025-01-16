@@ -192,3 +192,17 @@ const typesOfFood = { string: 'This is a string', number: 30 };
 console.log(typesOfFood.string);
 console.log(chestPress.key);
 console.log(simpleFood[0]);
+
+const LegPress = mixFour.People[0].FirstName;
+
+console.log(GymName);
+
+const chestObject = { key: 'value', keyTwo: 'valueTwo' };
+
+const simpleGymFood = ['orange', 'apple', 'lemon', 'strawberry'];
+
+const typesOfLifeFood = { string: 'This is a string', number: 30 };
+
+console.log(typesOfFood.string);
+console.log(chestPress.key);
+console.log(simpleFood[0]);
