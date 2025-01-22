@@ -206,3 +206,7 @@ const typesOfLifeFood = { string: 'This is a string', number: 30 };
 console.log(typesOfFood.string);
 console.log(chestPress.key);
 console.log(simpleFood[0]);
+console.log(simpleGymfood[0]);
+console.log(simpleGymfood[1]);
+console.log(simpleGymfood[2]);
+console.log(simpleGymfood[3]);
