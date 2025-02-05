@@ -210,3 +210,10 @@ console.log(simpleGymfood[0]);
 console.log(simpleGymfood[1]);
 console.log(simpleGymfood[2]);
 console.log(simpleGymfood[3]);
+
+console.log(chestPress.key);
+console.log(simpleFood[0]);
+console.log(simpleGymfood[0]);
+console.log(simpleGymfood[1]);
+console.log(simpleGymfood[2]);
+console.log(simpleGymfood[3]);
