@@ -12,3 +12,9 @@ const newObject = {
 console.log(newObject.nameOne);
 console.log(newObject.nameTwo);
 console.log(newObject.nameThree);
+
+let number = 1;
+
+number = 2;
+
+console.log(number);
